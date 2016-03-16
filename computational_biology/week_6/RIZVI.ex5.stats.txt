@@ -1,0 +1,2 @@
+total number of hits are:         3161
+numbers of hits less than 20 are: 604

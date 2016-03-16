@@ -1,0 +1,49 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
+#Students will need the import statements as example
+import string
+import BaumWelch
+import Viterbi
+import AEMatrices
+import Sequences
+
+def BWIteration(nrOfIteration, setX):
+	#print AEMatrices.E
+	#print "***********************************************"
+	for n in range(0,nrOfIteration):
+		(newA,newE,logodds)=BaumWelch.baumWelch(setX)
+		#print newE
+		AEMatrices.setNewA(newA)
+		AEMatrices.setNewE(newE)
+		print n, logodds
+		#print "###################################"
+	return(newA, newE, logodds)
+
+def answerPart2():
+	#Read the A and E matrices 
+	AEMatrices.init("input/EmissionPriorE2.txt", "input/TransPriorA2.txt")
+	#Read the input sequence(s) and store them into setX
+	setX = Sequences.readSeq("input/sequences.txt", "X")
+	#printForwardProb(setX)
+	BWIteration(100, setX)
+
+def main():
+	answerPart2()
+	"""
+	#Read the A and E matrices 
+	AEMatrices.init("input/EmissionPriorE1.txt", "input/TransPriorA1.txt")
+	#Read the input sequence(s) and store them into setX
+	setX = Sequences.readSeq("input/SequenceX1.txt", "X")
+	#Perform the Viterbi algorithm on the first sequence of the set setX 
+	#and store the viterbi matrix in the variable vi and the back trace matrix in variable backTrace
+	(vi, backTrace, probability) = Viterbi.viterbi(setX[0])
+	#print the output matrices of Viterbi algorithm
+	Viterbi.writePathMatrix(vi, setX[0], "output/ViterbiMatrix.txt")
+	Viterbi.writePathMatrix(backTrace, setX[0], "output/BackTraceMatrix.txt")
+	# print the most likely sequence path of x according to the viterbi algorithm
+	print Viterbi.generateStateSeq(backTrace, setX[0])
+	print probability
+	"""
+if __name__ == "__main__":
+	main()

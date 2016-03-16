@@ -1,0 +1,35 @@
+#!/usr/bin/python
+#The line above tells the system which python command it should use
+
+#import packages
+import sys
+
+#get arguments
+argument1 = int(sys.argv[1])
+argument2 = int(sys.argv[2])
+argument3 = sys.argv[3]
+
+#assign a and b
+if(argument3 == 'm'):
+	print argument1*argument2
+elif(argument3 == 'a'):
+	print argument1+argument2
+elif(argument3 == 's'):
+	print argument1-argument2
+elif(argument3 == 'd'):
+	print argument1/argument2
+else:
+	print "Unknown"
+
+
+
+
+	
+
+
+
+
+
+
+
+

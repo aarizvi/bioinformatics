@@ -1,0 +1,8 @@
+#if statement (even though I just learned it)
+a=True
+b=False
+
+if(a): 
+	print"yes"
+else:
+	print"no"

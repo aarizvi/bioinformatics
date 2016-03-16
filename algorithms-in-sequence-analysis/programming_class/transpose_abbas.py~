@@ -1,0 +1,34 @@
+import sys
+
+def read_sequence(in_file):
+    f = open(in_file) #opens input file
+    seq = f.read() #reads input file
+    f.close #closes input file
+    return seq
+
+#make a dictionary of 3 codon nucleotides into amino acids (codon_table.txt)        
+def translate(input_file):
+    f = open(input_file) #opens codon_table.txt
+    codon_dict = {} #creates an empty dictionary that will translate the codons into amino acids
+    for l in f:
+        words = l.split()
+        codon = words[0]
+        letter = words[1]
+        codon_dict[codon] = letter
+    return codon_dict
+ 
+def triplet(input_file):
+    t = open(input_file)
+    for i in range(0, len(t), 3):
+        codon = seq[i:i+3]
+    if len(codon) == 3:
+        return codon
+
+def main(seq_file,dict_file):
+    seq = read_sequence(seq_file)
+    print seq
+    codon_dict = translate(dict_file)
+    print codon
+
+if __name__ == "__main__":
+    main(sys.argv[1],sys.argv[2]) #argument 1 is the sequence file, argument 2 is the codon_table  

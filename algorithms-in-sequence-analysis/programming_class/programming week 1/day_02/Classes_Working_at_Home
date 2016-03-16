@@ -1,0 +1,204 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+				<meta name="keywords" content="Classes Working at Home" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="search" type="application/opensearchdescription+xml" href="/mp/opensearch_desc.php" title="Master Projects (English)" />
+<link rel="alternate" type="application/rss+xml" title="Master Projects RSS Feed" href="http://wiki.cs.vu.nl/mp/index.php?title=Special:Recentchanges&amp;feed=rss" />
+<link rel="alternate" type="application/atom+xml" title="Master Projects Atom Feed" href="http://wiki.cs.vu.nl/mp/index.php?title=Special:Recentchanges&amp;feed=atom" />
+		<title>Classes Working at Home - Master Projects</title>
+		<style type="text/css" media="screen, projection">/*<![CDATA[*/
+			@import "/mp/skins/common/shared.css?116";
+			@import "/mp/skins/monobook/main.css?116";
+		/*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="/mp/skins/common/commonPrint.css?116" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/mp/skins/monobook/IE50Fixes.css?116";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/mp/skins/monobook/IE55Fixes.css?116";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/mp/skins/monobook/IE60Fixes.css?116";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/mp/skins/monobook/IE70Fixes.css?116";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/mp/skins/common/IEFixes.js?116"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		
+		<script type= "text/javascript">/*<![CDATA[*/
+var skin = "monobook";
+var stylepath = "/mp/skins";
+var wgArticlePath = "/mp/index.php/$1";
+var wgScriptPath = "/mp";
+var wgScript = "/mp/index.php";
+var wgServer = "http://wiki.cs.vu.nl";
+var wgCanonicalNamespace = "";
+var wgCanonicalSpecialPageName = false;
+var wgNamespaceNumber = 0;
+var wgPageName = "Classes_Working_at_Home";
+var wgTitle = "Classes Working at Home";
+var wgAction = "view";
+var wgRestrictionEdit = [];
+var wgRestrictionMove = [];
+var wgArticleId = "9801";
+var wgIsArticle = true;
+var wgUserName = null;
+var wgUserGroups = null;
+var wgUserLanguage = "en";
+var wgContentLanguage = "en";
+var wgBreakFrames = false;
+var wgCurRevisionId = "40311";
+var wgVersion = "1.12.0";
+var wgEnableAPI = true;
+var wgEnableWriteAPI = false;
+/*]]>*/</script>
+                
+		<script type="text/javascript" src="/mp/skins/common/wikibits.js?116"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+		<script type="text/javascript" src="/mp/skins/common/ajax.js?116"></script>
+		<link rel="alternate" type="application/rdf+xml" title="Classes Working at Home" href="/mp/index.php?title=Special:ExportRDF/Classes_Working_at_Home&amp;xmlmime=rdf" />
+		<script type="text/javascript" src="/mp/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=monobook"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "/mp/index.php?title=MediaWiki:Common.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=18000";
+@import "/mp/index.php?title=MediaWiki:Monobook.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=18000";
+@import "/mp/index.php?title=-&action=raw&gen=css&maxage=18000";
+/*]]>*/</style>
+	</head>
+<body class="mediawiki ns-0 ltr page-Classes_Working_at_Home">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Classes Working at Home</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Master Projects</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>			<!-- start content -->
+			<p>There are a few options to work at home on linux:
+</p>
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Mac_and_Linux_users"><span class="tocnumber">1</span> <span class="toctext">Mac and Linux users</span></a></li>
+<li class="toclevel-1"><a href="#Login_to_a_vu_server"><span class="tocnumber">2</span> <span class="toctext">Login to a vu server</span></a></li>
+<li class="toclevel-1"><a href="#Install_ubuntu"><span class="tocnumber">3</span> <span class="toctext">Install ubuntu</span></a></li>
+<li class="toclevel-1"><a href="#Install_Python_on_Windows"><span class="tocnumber">4</span> <span class="toctext">Install Python on Windows</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<a name="Mac_and_Linux_users"></a><h2> <span class="mw-headline"> Mac and Linux users </span></h2>
+<p>Just open a terminal and type "python"&nbsp;!
+</p>
+<a name="Login_to_a_vu_server"></a><h2> <span class="mw-headline">Login to a vu server</span></h2>
+<p>From home you should be able to login on the following servers:
+</p>
+<ul><li> galjas.few.vu.nl - 8 core Linux 64 bit 32GB RAM
+</li><li> kits.few.vu.nl - 4 core Linux 64 bit 16GB RAM
+</li></ul>
+<p>In windows you can install the free program PuTTY to login to the servers, and run your scripts.
+Use your own (VUnet ID) login, or the guest account that you used at the practical.
+</p><p>To edit your scripts there are a couple of options:
+</p>
+<ul><li> <a href="http://live.gnome.org/Gedit/Windows" class="external text" title="http://live.gnome.org/Gedit/Windows" rel="nofollow">edit</a> your scripts at your local computer, and upload the file to the server using <a href="http://winscp.net/eng/download.php" class="external text" title="http://winscp.net/eng/download.php" rel="nofollow">WinSCP</a>
+</li><li> use an inline editor such as nano or pico in PuTTY
+</li></ul>
+<a name="Install_ubuntu"></a><h2> <span class="mw-headline"> Install ubuntu </span></h2>
+<p>You can install Ubuntu Linux as windows installer so that the linux will be automatically installed alongside your windows OS plus you don't have to make any changes in your hard drive partition etc. you can download it here: <a href="http://www.ubuntu.com/download/ubuntu/windows-installer" class="external free" title="http://www.ubuntu.com/download/ubuntu/windows-installer" rel="nofollow">http://www.ubuntu.com/download/ubuntu/windows-installer</a>
+</p><p><br />
+</p>
+<a name="Install_Python_on_Windows"></a><h2> <span class="mw-headline"> Install Python on Windows </span></h2>
+<p>Its is possible to install <a href="http://www.python.org/getit/windows/" class="external text" title="http://www.python.org/getit/windows/" rel="nofollow">Python on Windows</a>. You can also install a graphical editor like <a href="http://live.gnome.org/Gedit/Windows" class="external text" title="http://live.gnome.org/Gedit/Windows" rel="nofollow">gedit for Windows</a>.
+</p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 5/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+-->
+
+<!-- Saved in parser cache with key wiki-few-cs-dbs-test1_:pcache:idhash:9801-0!1!0!!en!2!edit=0 and timestamp 20140902114506 -->
+<div class="printfooter">
+Retrieved from "<a href="http://wiki.cs.vu.nl/mp/index.php/Classes_Working_at_Home">http://wiki.cs.vu.nl/mp/index.php/Classes_Working_at_Home</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<div class="pBody">
+			<ul>
+					 <li id="ca-nstab-main" class="selected"><a href="/mp/index.php/Classes_Working_at_Home" title="View the content page [c]" accesskey="c">Page</a></li>
+					 <li id="ca-talk" class="new"><a href="/mp/index.php?title=Talk:Classes_Working_at_Home&amp;action=edit" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+					 <li id="ca-viewsource"><a href="/mp/index.php?title=Classes_Working_at_Home&amp;action=edit" title="This page is protected. You can view its source. [e]" accesskey="e">View source</a></li>
+					 <li id="ca-history"><a href="/mp/index.php?title=Classes_Working_at_Home&amp;action=history" title="Past versions of this page. [h]" accesskey="h">History</a></li>
+				</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="/mp/index.php?title=Special:Userlogin&amp;returnto=Classes_Working_at_Home" title="You are encouraged to log in, it is not mandatory however. [o]" accesskey="o">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(/mp/vu.png);" href="/mp/index.php/Main_Page" title="Visit the Main Page [z]" accesskey="z"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+		<div class='portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-mainpage"><a href="/mp/index.php/Main_Page" title="Visit the Main Page [z]" accesskey="z">Main Page</a></li>
+				<li id="n-recentchanges"><a href="/mp/index.php/Special:Recentchanges" title="The list of recent changes in the wiki. [r]" accesskey="r">Recent changes</a></li>
+				<li id="n-help"><a href="/mp/index.php/Help:Contents" title="The place to find out.">Help</a></li>
+			</ul>
+		</div>
+	</div>
+		<div class='portlet' id='p-Masters'>
+		<h5>Masters</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Artificial-Intelligence"><a href="/mp/index.php/Artificial_Intelligence">Artificial Intelligence</a></li>
+				<li id="n-Bioinformatics"><a href="/mp/index.php/Bioinformatics_Master">Bioinformatics</a></li>
+				<li id="n-Computer-Science"><a href="/mp/index.php/Computer_Science">Computer Science</a></li>
+				<li id="n-Information-Sciences"><a href="/mp/index.php/Information_Sciences_Master">Information Sciences</a></li>
+				<li id="n-Parallel-and-Distributed-Computer-Systems"><a href="/mp/index.php/Parallel_and_Distributed_Computer_Systems_Master">Parallel and Distributed Computer Systems</a></li>
+			</ul>
+		</div>
+	</div>
+		<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/mp/index.php/Special:Search" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" title="Search Master Projects [f]" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" title="Go to a page with this exact name if exists" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the pages for this text" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="/mp/index.php/Special:Whatlinkshere/Classes_Working_at_Home" title="List of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="/mp/index.php/Special:Recentchangeslinked/Classes_Working_at_Home" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+<li id="t-upload"><a href="/mp/index.php/Special:Upload" title="Upload files [u]" accesskey="u">Upload file</a></li>
+<li id="t-specialpages"><a href="/mp/index.php/Special:Specialpages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="/mp/index.php?title=Classes_Working_at_Home&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="/mp/index.php?title=Classes_Working_at_Home&amp;oldid=40311" title="Permanent link to this version of the page">Permanent link</a></li><li id="t-smwbrowselink"><a href="/mp/index.php/Special:Browse/Classes_Working_at_Home" title="Special:Browse/Classes Working at Home">Browse properties</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="/mp/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" /></a></div>
+			<ul id="f-list">
+				<li id="lastmod"> This page was last modified 18:44, 12 September 2011.</li>
+				<li id="viewcount">This page has been accessed 384 times.</li>
+				<li id="privacy"><a href="/mp/index.php/Master_Projects:Privacy_policy" title="Master Projects:Privacy policy">Privacy policy</a></li>
+				<li id="about"><a href="/mp/index.php/Master_Projects:About" title="Master Projects:About">About Master Projects</a></li>
+				<li id="disclaimer"><a href="/mp/index.php/Master_Projects:General_disclaimer" title="Master Projects:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+		
+	
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served in 1.157 secs. --></body></html>

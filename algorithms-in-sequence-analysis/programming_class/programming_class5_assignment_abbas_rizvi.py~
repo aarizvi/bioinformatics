@@ -1,0 +1,67 @@
+import sys
+
+#open sequences -- sequence.txt 
+def read_sequence(in_file):
+    f = open(in_file) #opens input file
+    seq = f.read() #reads input file
+    f.close #closes input file
+    return seq
+
+#get complementary strands of the original sequences
+def find_complement(seq):
+    comp_dict = {'A':'T','T':'A','C':'G','G':'C'} #creates complementary strand dict
+    comp_seq = '' #sets up new variable that will contain the comp. strand as a string after the for loop
+    for letter in seq:
+        comp_seq = comp_dict[letter] + comp_seq
+    return comp_seq
+
+#make a dictionary of 3 codon nucleotides into amino acids (codon_table.txt)        
+def make_trans_dict(in_file):
+    f = open(in_file) #opens codon_table.txt
+    trans_dict = {} #creates an empty dictionary that will translate the codons into amino acids
+    for l in f:
+        words = l.split()
+        codon = words[0]
+        letter = words[1]
+        trans_dict[codon] = letter
+    return trans_dict
+
+#sequence into triplets and open reading frames and translate into amino acid seq
+def find_ORFs(seq, trans_dict):
+    trans_list = [] #empty list that will have my translated list
+    for j in range(0,3): #for loop to change starting position from 0 to 3 for ORF)
+        ORF = seq[j:]
+        x = ''
+        translate = False
+        for i in range(0, len(ORF), 3): 
+            triplet = ORF[i:i+3] #defines variable triplet three successive nucleotides
+            if len(triplet) == 3:  #if the codon is equal to 3 nucleotides, translate it
+                amino_acid = trans_dict[triplet] #translates the codon sequence into amino acids
+                if amino_acid == 'M': #if statement to define the start codon (Met)
+                    translate = True
+                elif amino_acid == '*': #if there is a stop codon (*) it will stop translation
+                    translate = False
+                if translate == True:
+                    x += amino_acid #add the amino_acids to the empty string x
+        trans_list.append(x) #add x to the empty list trans_list'
+    return trans_list	    
+
+    
+def main(seq_file,dict_file):
+    seq = read_sequence(seq_file)
+    print 'Forward:    5\'-',seq,'-3\''
+    comp_seq = find_complement(seq)
+    print 'Complement: 3\'-', comp_seq[::-1], '-5\''
+    trans_dict = make_trans_dict(dict_file)
+    ORFF = find_ORFs(seq,trans_dict)
+    print 'Frame 1 (5\'->3\'):', ORFF[0]
+    print 'Frame 2 (5\'->3\'):', ORFF[1]
+    print 'Frame 3 (5\'->3\'):', ORFF[2]
+    ORFR = find_ORFs(comp_seq,trans_dict)
+    print 'Frame 1 (3\'->5\'):', ORFR[0]
+    print 'Frame 2 (3\'->5\'):', ORFR[1]
+    print 'Frame 3 (3\'->5\'):', ORFR[2]
+
+    
+if __name__ == "__main__":
+    main(sys.argv[1],sys.argv[2]) #argument 1 is the sequence file, argument 2 is the codon_table 

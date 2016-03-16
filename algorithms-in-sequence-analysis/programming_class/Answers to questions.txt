@@ -1,0 +1,51 @@
+Q2.1: Explain what is meant by a homolog and what the purpose of BLAST is in the context of homology:
+
+A: Homology indictes the exsistence of a common ancester for specific genes and proteins. As functionality of genes evolves much slower then de makeup of the genes itself it is commen for genes sharing a commen ancestor to still preform the same function even if they differ significantly from each other.
+
+The purpose of Blast is to compare a protein sequence with sequences stored within a database to determine which known genes and proteins might share a commen ancestor with the input sequence. using these comparisions a possible commen ancestor can be determined which can aid in deducing the funtionality based on the homology of the sequence.
+
+--
+
+Q2.2: What is the meaning of the bit-score and the corresponding e-value? Explain how the e-value is calculated.
+
+A:The bit-score is the logaritmic value of the Score (S), which is the sum of the individual alighment scores. A high bit-schore indicates a high alighment. The e-value is the expected number of non-homologous sequences with a score equal or greater then the score obtained by the alignments. A  E-value of 0.01 means that that the chance of a false positive appearing is 1 per 100 indipendand searches over the database.
+
+the E value for score S from a local pairwise alignment can be calculated with:
+
+E = Kmn*e^-λS
+
+with m: sequence length 1. n: sequence length 2 and K and λ are variables based on Blast settings.
+
+
+--
+
+Q2.3: Explain the main differences between BLAST and PSI-BLAST. With which method do you expect more hits for the same query sequence? Which method is more sensitive? Corroborate your answer with the e- value your script produces.
+
+A: PSI-BLAST takes the initual result of BLAST and places this into a profile before running the profile trough the database for a set number ot times. Depending of the settings the result of PSI-BLAST can contain more hits, due to a less specific defenition, or fewer hits, due to a more focused profile. PSI-BLAST can be more sensitive the BLAST with proper setup and is used to find more distand homologues.
+
+{{SCRIPS RESULTS?}}
+
+--
+
+Q2.4: What is the difference between e-value threshold parameters -e and -h in blastpgp.
+Try different e-value thresholds, and explain your observation.
+
+A:  
+
+
+h is the iteration threshold, e is the e-value threshold for the blast.  If you increased e it will report more results (and take a longer time to produce them).  If you lower e, it will return less results.  If you decrease h, it will blast and create a small profile, the small profile shows up with results, and it is possible that it creates another profile that is slightly different, and then it knows that it should stop (because it stopped after iteration 3).  If you increase h, it will create more profiles because it keeps finding more results and will conduct more iterations in order to optimize the fit to the model.  
+
+--
+
+Q2.5: Is it possible that PSI-BLAST stops before it reached the number of iterations specifed by the -j parameter. If so, why?
+Hint: Consider the purpose of the -h parameter
+
+A:  Yes this is possible, if psiblast finds that the model it has created from the previous iteration does not differ enough from the currently created model it will stop iterating (the model is optimised).
+
+--
+
+Q2.6: Suppose you weren't using a local sequence database for your PSI-BLAST runs. Which database would be best to generate a PSI-BLAST profle with, and what search strategy would you use?
+
+A:
+
+Uniprot non-redundant database ... somethingsomething?

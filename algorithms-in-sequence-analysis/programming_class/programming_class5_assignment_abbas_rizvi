@@ -1,0 +1,36 @@
+import sys
+
+def read_sequence(in_file):
+    return seq
+
+def find_complement(seq):
+    comp_dict = {'A':'T','T':'A','C':'G','G':'C'}
+    comp_seq = ''
+    for letter in seq:
+	comp_seq = comp_dict[letter] + comp_seq
+    return comp_seq
+
+def find_ORFs(seq1,seq2):
+    return list_of_list_of_triplets
+
+def make_trans_dict(in_file):
+    return trans_dict
+
+def translate_to_AA(triplets,dictionary):
+    return translated_triplets
+
+def print_proteins(AA_seqs):
+    print "OUTPUT"
+	    
+def main(seq_file,dict_file):
+    seq = read_sequence(seq_file)
+    comp_seq = find_complement(seq)
+    ORFs = find_ORFs(seq,comp_seq)
+    trans_dict = make_trans_dict(dict_file)
+    AA_seqs = []
+    for orf in ORFs:
+	AA_seqs.append(translate_to_AA(orf,trans_dict))
+    print_proteins(AA_seqs)
+    
+if __name__ == "__main__":
+    main(sys.argv[1],sys.argv[2])

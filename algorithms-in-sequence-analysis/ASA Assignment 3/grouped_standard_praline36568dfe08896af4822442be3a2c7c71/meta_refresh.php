@@ -1,0 +1,1 @@
+<?php $refresh=30 ?>
